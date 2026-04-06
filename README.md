@@ -1,17 +1,18 @@
-# RAG Chatbot for Internal Company Q&A
+Chatbot for Math Problems Answer Extraction & LaTeX Formatting
 
 ## Workflow
-Turning internal company documents into an AI-powered knowledge-base chatbot that answers employee or customer questions.
+Automatically extracting the **answer** and **explanation** sections from a math solution, and converting both into clean, well-structured LaTeX output.
 
 ## User
-Internal employees (e.g., new hires, support agents, operations staff) who need quick, accurate answers about company policies, product specs, HR guidelines, or operational procedures — without manually searching through scattered documents.
+Teachers, educational content editors, or EdTech developers who need to digitize and standardize large volumes of Gaokao exam solutions into LaTeX format for use in textbooks, online learning platforms, or exam databases.
 
 ## Input
-- Uploaded company files (PDFs, Word docs, slide decks, etc.) covering policies, product documentation, FAQs, and internal guides.
-- A natural-language question from the user (e.g., "What is the return policy for enterprise customers?" or "How do I request PTO?").
+- A raw Gaokao question solution (image, PDF, or text), which contains a mixed-format answer and step-by-step explanation, often with handwritten or semi-structured mathematical expressions, diagrams, and Chinese text.
 
 ## Output
-A concise, contextually accurate answer generated from the relevant document chunks, along with source references indicating which document(s) the answer was drawn from — so the user can verify and dig deeper if needed.
+- Two clearly separated LaTeX-formatted sections:
+  1. **Answer:** The final answer expressed in LaTeX
+  2. **Explanation:** The full step-by-step solution process in LaTeX, preserving all mathematical derivations, logical reasoning
 
 ## Why This Task Is Valuable to Automate
-Company knowledge is often buried across dozens of documents in different formats and locations. Employees waste significant time searching, reading, and interpreting these files for simple answers. An RAG chatbot automates the retrieval and synthesis step: it indexes documents once, then instantly surfaces the most relevant passages to answer any question. This reduces onboarding time for new hires, lowers the burden on HR/IT/support teams who repeatedly answer the same questions, and ensures consistent, up-to-date answers across the organization.
+This is to provide more training data for a math problem solvers. Because in past years, there have been plenty of math practicing problems with answers. However, these answers are not analyzed or catagorized into clear format. Our AI model could help with that.
