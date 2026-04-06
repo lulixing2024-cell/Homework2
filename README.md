@@ -1,12 +1,17 @@
-# Homework2
-This is the homework 2 for the course Generative AI in the Johns Hopkins University
+# RAG Chatbot for Internal Company Q&A
 
-Workflow: Drafting Customer Support Responses
+## Workflow
+Turning internal company documents into an AI-powered knowledge-base chatbot that answers employee or customer questions.
 
-User: Customer support agents handling incoming tickets (email/chat) for a SaaS product.
+## User
+Internal employees (e.g., new hires, support agents, operations staff) who need quick, accurate answers about company policies, product specs, HR guidelines, or operational procedures — without manually searching through scattered documents.
 
-Input: Customer message (complaint, question, or feature request), plus relevant context such as account info, product docs, and past ticket history.
+## Input
+- Uploaded company files (PDFs, Word docs, slide decks, etc.) covering policies, product documentation, FAQs, and internal guides.
+- A natural-language question from the user (e.g., "What is the return policy for enterprise customers?" or "How do I request PTO?").
 
-Output: A draft reply that addresses the customer's issue with accurate information, appropriate tone, and ready for the agent to review, edit, and send.
+## Output
+A concise, contextually accurate answer generated from the relevant document chunks, along with source references indicating which document(s) the answer was drawn from — so the user can verify and dig deeper if needed.
 
-Why automate: Support teams face high volume and repetitive inquiries (password resets, billing questions, how-to's). AI-drafted responses cut average handle time significantly, ensure consistent tone and accuracy, and free agents to focus on complex or escalated cases. Even partial automation (draft + human review) reduces cognitive load and speeds up response SLAs.
+## Why This Task Is Valuable to Automate
+Company knowledge is often buried across dozens of documents in different formats and locations. Employees waste significant time searching, reading, and interpreting these files for simple answers. An RAG chatbot automates the retrieval and synthesis step: it indexes documents once, then instantly surfaces the most relevant passages to answer any question. This reduces onboarding time for new hires, lowers the burden on HR/IT/support teams who repeatedly answer the same questions, and ensures consistent, up-to-date answers across the organization.
