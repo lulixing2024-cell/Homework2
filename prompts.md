@@ -67,7 +67,7 @@ Return only the JSON. No preamble, no additional text.
 ```
 
 **What changed and why:**
-The phrase "If there are multiple answers, list all of them" was added to the Answer field after testing on the quadratic equation image (x² - 8x + 15 = 0), where Revision 1 returned only `x = 5` and omitted `x = 3`. The fix was minimal and targeted — no other instructions were altered to avoid regression.
+The phrase "If there are multiple answers, list all of them" was added to the Answer field after testing on the quadratic equation image (x² - 8x + 15 = 0), where Revision 1 returned only `x = 5` and omitted `x = 3`. The fix was minimal and targeted and no other instructions were altered to avoid regression.
 
 **What improved, stayed the same, or got worse:**
-The model now correctly returns both roots for multi-solution problems. JSON structure and LaTeX formatting remained consistent with Revision 1. One limitation that persists is language consistency — when the image contains Hindi or Chinese text (as in Example 3), the model occasionally returns the explanation in the source language rather than English, which may affect readability in a mixed-language evaluation dataset.
+The model now correctly returns both roots for multi-solution problems. JSON structure and LaTeX formatting remained consistent with Revision 1. One limitation that persists is language consistency. When the image contains Hindi or Chinese text (as in Example 3), the model occasionally returns the explanation in the source language rather than English, which may affect readability in a mixed-language evaluation dataset.
