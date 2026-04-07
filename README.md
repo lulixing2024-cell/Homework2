@@ -16,3 +16,6 @@ Teachers, educational content editors, or EdTech developers who need to digitize
 
 ## Why This Task Is Valuable to Automate
 This is to provide more training data for a math problem solvers. Because in past years, there have been plenty of math practicing problems with answers. However, these answers are not analyzed or catagorized into clear format. Our AI model could help with that.
+
+## Video Link
+https://youtu.be/Ny6gPRcRTtk
