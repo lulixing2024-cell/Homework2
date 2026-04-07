@@ -44,7 +44,7 @@ Return only the JSON. No preamble, no additional text.
 A role assignment ("You are a math expert") was added to anchor the model's behavior, and LaTeX formatting was explicitly required after observing that the initial version returned plain text expressions like `4pi` instead of `$4\pi$`, making the output hard to render. A fallback value (`"cannot show"`) was also introduced after the model returned empty strings or hallucinated content for low-quality handwritten images.
 
 **What improved, stayed the same, or got worse:**
-Output formatting improved significantly — LaTeX expressions rendered correctly in the Streamlit UI. The JSON structure remained stable. However, for problems with multiple solutions (e.g., quadratic equations), the model still returned only one root, suggesting the instruction was not specific enough about exhaustive answers.
+Output formatting improved significantly. LaTeX expressions rendered correctly in the Streamlit UI. The JSON structure remained stable. However, for problems with multiple solutions (e.g., quadratic equations), the model still returned only one root, suggesting the instruction was not specific enough about exhaustive answers.
 
 ---
 
